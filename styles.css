@@ -1,0 +1,154 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400&family=Open+Sans:wght@400;700&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Pure white background */
+    color: #333;
+    line-height: 1.6;
+    padding-bottom: 65px;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 80px; /* 80px padding on the left and right */
+}
+
+/* Headings */
+h1, h2 {
+    font-family: 'Arimo', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400; /* Unbolded headings */
+    font-size: 60px;
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    align-items: flex-start; /* Aligns the top edges of the text and image */
+    margin-bottom: 50px;
+}
+
+.about-text {
+    flex: 1;
+    margin-right: 120px; /* 120px margin between text and profile picture */
+}
+
+.about-text h1 {
+    font-size: 60px;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.profile-picture-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 450px; /* Limit maximum width of the wrapper */
+}
+
+.profile-picture {
+    width: 450px; /* Explicit width */
+    height: 450px; /* Explicit height */
+    margin-top: 65px;
+    object-fit: cover; /* Maintain aspect ratio without warping */
+    display: block; /* Prevent inline artifacts */
+}
+
+/* Selected Works Section */
+.selected-works {
+    margin-bottom: 30px;
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.work {
+    margin-bottom: 10px;
+}
+
+.work-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color */
+}
+
+.work-link:hover .excerpt {
+    font-weight: bold; /* Only bold the excerpt on hover */
+}
+
+.excerpt, .title {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.title em {
+    font-style: italic;
+}
+
+.full-width-image {
+    width: 100%; /* Span entire screen width */
+    margin: 0; /* Remove container margin */
+}
+
+/* Other Publications Section */
+.other-publications {
+    display: flex;
+    justify-content: space-between; /* Divide section into two halves */
+    margin-bottom: 50px;
+}
+
+.other-publications h2 {
+    font-size: 60px; /* Title font size */
+    line-height: 1.2; /* Adjust line height */
+    text-transform: uppercase; /* Ensure uppercase styling */
+    margin: 0; /* Remove extra margin */
+    padding: 0; /* Remove extra padding */
+}
+
+.other-publications-container {
+    flex: 1; /* Take the left side of the section */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align title and text to the top */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px; /* Add spacing below the title */
+    margin-left: 0;
+    flex: 1; /* Make the text column proportional */
+}
+
+li {
+    margin: 10px 0;
+}
+
+li a {
+    text-decoration: none;
+    color: #333;
+}
+
+li a:hover {
+    font-weight: bold; /* Bold text on hover */
+} 
+
+.other-publications-image {
+    flex: 0 0 240px; /* Fix the size of the image */
+    width: 300px;
+    height: 300px;
+    object-fit: contain; /* Maintain aspect ratio without warping */
+    align-self: flex-start; /* Align the top of the image with the top of the section */
+    margin-left: -100px; /* Add spacing between the text and the image */
+    margin-top: 120px;
+}
